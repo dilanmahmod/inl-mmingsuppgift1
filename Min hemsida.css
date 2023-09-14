@@ -11,15 +11,21 @@
     width: 100px;
     border-radius: 50px;
     float:left;
-    margin: right 10px;;
+    margin: right 10px;
+}
+body {
+background-image: url(bakgrundsbild.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+
 }
   .header {
     grid-area: header;
     position: sticky;
-    top: 0px;
-    background-color: pink;
+    top: 0%;
+    background-color: rgb(207, 200, 178);
   }
-  
+
   .left {
     grid-area: left;
   }
