@@ -45,15 +45,16 @@ footer{
     grid-area: footer;
     background: orange;
     text-align: center;
+    height: 100px;
 }
 
 body {
-    background-image: url(bakgrundsbild.jpg);
+    background-image: url(bilder/bakgrundsbild.jpg);
     background-size: cover;
     background-repeat: no-repeat;  
  }
 img{
     width: 200px;
     height: auto;
-    float:right;
+    float: right;
 }
