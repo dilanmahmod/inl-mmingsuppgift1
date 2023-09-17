@@ -8,7 +8,7 @@
     "sidebar main main main"
     "sidebar content1 content2 content3"
     "sidebar footer footer footer";
-    grid-gap: 0.2rem;
+    grid-gap: 0.5rem;
 }
 
 .header {
@@ -16,6 +16,7 @@
     position: sticky;
     top: 0%;
     background-color: rgb(207, 200, 178);
+    text-align: center;
   }
 
 main{
@@ -30,32 +31,29 @@ main{
 
 #content1{
     grid-area: content1;
-    background: green;
 }
 
 #content2{
     grid-area: content2;
-    background: blue;
 }
 
 #content3{
     grid-area: content3;
-    background: purple;
 }
 
 footer{
     grid-area: footer;
     background: orange;
+    text-align: center;
 }
 
 body {
     background-image: url(bakgrundsbild.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    
+    background-repeat: no-repeat;  
  }
-
- img{
-    width: 100px;
-    border-radius: 50px;
+img{
+    width: 200px;
+    height: auto;
+    float:right;
 }
