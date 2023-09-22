@@ -1,3 +1,4 @@
+/*Detta är en behållare som jag ska styla i*/
 .container{
     display: grid;
     height: 100vh;
@@ -8,7 +9,7 @@
     "sidebar content1 content2 content3"
     "footer footer footer footer";
 }
-
+/*Här stylar jag huvudrubriken*/
 .header {
     grid-area: header;
     position: sticky;
@@ -21,22 +22,23 @@ main{
     grid-area: main;
 }
 
+/*här stylar jag bara texten så den blir lite fetare*/
 .sidebar{
     grid-area: sidebar;
     font-weight: bold;
 
 }
-
+/*Här stylar jag textstorleken*/
 ol{
     display: grid;
     font-size: 20px;
 
 }
-
+/*Här lägger jag in lite mellanrum mellan de*/
 li{
     margin-bottom: 10px;
 }
-
+/*Här styr jag höjden på elementet*/
 #meddelande{
     height: 90px;
 }
@@ -56,7 +58,7 @@ li{
 .footer{
     grid-area: footer;
 }
-
+/*Här tar jag bor understreck på home, about , contact. Lägger svart svart färg på texten. Lögger den på höger sida. Lite mellanrum oxå*/
 a{
     text-decoration: none;
     color: black;
@@ -64,13 +66,51 @@ a{
     float: right;
     
 }
-
+/*Här lägger jag in en bakgrundsbild som är helfärgad*/
 body {
     background-image: url(bilder/bakgrundsbild.jpg);
     background-size: cover;  
 }
+/*Här stylar jag bilderna med pixlar och lägger de på höger sida.*/
 img{
     width: 200px;
     height: auto;
     float: right;
+}
+
+/*Detta är en mobilanpassad brytpunkt, iphone*/
+@media screen and (max-width: 380px){
+    .container{
+        display: block;
+
+        }
+    
+    .header, .sidebar, .main, #content1, #content2, #content3, .footer{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 10px;
+    }
+    #content1,
+    #content2,
+    #content3 {
+        grid-area: unset;
+
+        }
+        img{
+            max-width: 30%;
+            height: auto;
+        }
+}
+/*Detta är en ipad-anpassad brytpunkt*/
+@media screen and (max-width: 2360px){
+    .container{
+        width: 100%;
+    }
+}
+/*Detta är en dator-anpassad brytpunkt*/
+@media screen and (min-width: 1200px){
+    .container{
+        width: 100%;
+    }
 }

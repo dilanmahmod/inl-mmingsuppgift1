@@ -7,14 +7,22 @@
     <!--Här länkar jag till css style-->
     <link rel="stylesheet" href="layout.css">
 </head>
-  
 <body>
-  <div class= "container">
+  <!--Här börjar jag med att skapa en behållare som ska struktueras i css-->
+  <div class="container">
+    <!--Detta är huvudrubriken för min mall-->
     <div class="header">
-     <h1>SkinxGlow</h1></div>
-    <main><img src="bilder/jag.img.JPG" alt=""><h3>Welcome to my page</h3><p>My name is Dilan Mahmod and I am 27 years old. I have been a certified skincare therapist for several years, and I am truly passionate about it. What I love the most is skincare, and my passion for it developed at a young age when my mother used various skincare products when I was a child, sparking my interest in pursuing this field as a career. I genuinely enjoy spreading knowledge about the importance of skincare and the positive results that can be achieved by using the right products. In my free time, I like to work out and spend time with my family and friends. Im here to help you and if you want customized product recommendations, you can contact me.</p></main>
+      <!--Detta är den högsta rubriken som ska in i huvudrubriken "header"-->
+     <h1>SkinxGlow</h1>
+    </div>
+    <!--Här är själva main delarna där jag lagt in en bild på mig och lagt in en mindre rubrik samt paragraf där jag berättar lite om mig-->
+    <main><img src="bilder/jag.img.JPG" alt=""><h3>Welcome to my page</h3><p>My name is Dilan Mahmod and I am 27 years old. I have been a certified skincare therapist for several years, and I am truly passionate about it. What I love the most is skincare, and my passion for it developed at a young age when my mother used various skincare products when I was a child, sparking my interest in pursuing this field as a career. I genuinely enjoy spreading knowledge about the importance of skincare and the positive results that can be achieved by using the right products. In my free time, I like to work out and spend time with my family and friends. Im here to help you and if you want customized product recommendations, you can contact me</p><br>
+    </main>
+    <!--Denna "sidebar"ska visas på vänstra sidan av min webbsida-->
     <div class="sidebar">
+      <!--Här lägger jag in en mindre variant av en rubrik-->
       <h2>My 8 steps for the perfect skincare routine:</h2>
+      <!--Detta är en numrerad lista och ordnad lista-->
       <ol>
         <li>Facial</li>
         <li>A good toner</li>
@@ -25,31 +33,34 @@
         <li>Eyecream</li>
         <li>Sunscreen</li>
       </ol>
+      <!--Detta är en kontaktformulär där man kan kontakta mig-->
       <form>
-        <h4>Contact me:</h4>
-      <label for="fnamn">First name:</label><br>
-      <input type="text" id="fname" name="fname"placeholder="Enter your first name here"><br>
+       <h4>Contact me:</h4>
+       <!--Här har jag lagt in lite radbrytningar så de hamnar under varandra-->
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" placeholder="Enter your first name here"><br>
       <label for="lname">Last name:</label><br>
       <input type="text" id="lname" name="lname" placeholder="Enter your last name here"><br>
       <label for="mail">Email:</label><br>
       <input type="text" id="mail" name="mail" placeholder="Enter your email here"><br>
       <label for="meddelande">Send a message:</label><br>
-      <input type="text" id="meddelande" name="meddelande"placeholder="Enter your message here"><br><br>
-      
+      <input type="text" id="meddelande" name="meddelande" placeholder="Enter your message here"><br><br>
       <input type="submit" value="Send">
-      
-
       </form>
     </div>
+    <!--Detta är en unik attribut och då har jag lagt in bilder-->
     <div id="content1"><img src="bilder/nybild.jpg.JPG" alt=""></div>
     <div id="content2"><img src="bilder/nybild3.jpg.JPG" alt=""></div>
     <div id="content3"><img src="bilder/nybild2.jpg.JPG" alt=""></div>
+    <!--Detta är den nedersta delan av min hemsida-->
    <div class="footer"> 
 <footer>
+  <!--Här är några länkar-->
 <a href="#">Contact</a>
 <a href="#">About</a>
 <a href="#">Home</a>
-</footer>
-</div>
+      </footer>
+      </div>
+    </div>
 </body>
 </html>
